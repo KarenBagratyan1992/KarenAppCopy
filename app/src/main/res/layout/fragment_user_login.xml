@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".present.UserLoginFragment">
+
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My new Login Page"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/login_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Please insert your login"
+        android:textSize="24sp"
+        android:textStyle="italic"
+
+        app:layout_constraintEnd_toEndOf="@+id/title_text"
+        app:layout_constraintStart_toStartOf="@+id/title_text"
+        app:layout_constraintTop_toBottomOf="@+id/title_text" />
+
+    <EditText
+        android:id="@+id/login_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/corner_radius"
+        android:ems="12"
+        android:hint="Login"
+
+        android:padding="12dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/login_title_text"
+        app:layout_constraintStart_toStartOf="@+id/login_title_text"
+        app:layout_constraintTop_toBottomOf="@+id/login_title_text" />
+
+    <TextView
+        android:id="@+id/password_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Please insert your password"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/login_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/login_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/login_edit_text" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/corner_radius"
+        android:ems="12"
+        android:hint="password"
+        android:padding="12dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/password_title_text"
+        app:layout_constraintStart_toStartOf="@+id/password_title_text"
+        app:layout_constraintTop_toBottomOf="@+id/password_title_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/send_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/corner_send_button_radius"
+        android:text="Send"
+        app:layout_constraintStart_toStartOf="@+id/password_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/password_edit_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/get_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corenr_get_button_radius"
+        android:text="Get"
+        app:layout_constraintBottom_toBottomOf="@+id/send_btn"
+        app:layout_constraintEnd_toEndOf="@+id/password_edit_text"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toEndOf="@+id/send_btn"
+        app:layout_constraintTop_toTopOf="@+id/send_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
